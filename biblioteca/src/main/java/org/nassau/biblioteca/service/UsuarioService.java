@@ -4,10 +4,13 @@ import lombok.RequiredArgsConstructor;
 import org.nassau.biblioteca.domain.Livros;
 import org.nassau.biblioteca.domain.Usuario;
 import org.nassau.biblioteca.exceptions.ex.ConteudoNaoEncontrado;
+import org.nassau.biblioteca.exceptions.ex.UsuarioComLivroEmprestado;
 import org.nassau.biblioteca.repository.LivrosRepository;
 import org.nassau.biblioteca.repository.UsuarioRepository;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
 
 @Service
@@ -54,7 +57,14 @@ public class UsuarioService {
 
     public void deletarUsuario(Integer id){
         var usuario = this.buscarUsuario(id);
-        repository.delete(usuario);
+        try {
+            repository.delete(usuario);
+        }
+        catch (DataIntegrityViolationException e){
+
+            throw new UsuarioComLivroEmprestado("Usuario nao pode ser deletado sem antes devolver seus livros");
+        }
+
     }
 
 

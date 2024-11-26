@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.nassau.biblioteca.exceptions.ex.ConteudoNaoEncontrado;
 import org.nassau.biblioteca.exceptions.ex.LimiteDePendenciaDeEmprestimos;
 import org.nassau.biblioteca.exceptions.ex.LimiteMaximoDeEmprestimos;
+import org.nassau.biblioteca.exceptions.ex.UsuarioComLivroEmprestado;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -45,6 +46,14 @@ public class ApiExceptionHandler {
 
     @ExceptionHandler(LimiteMaximoDeEmprestimos.class)
     public ResponseEntity<MessageError> conteudoNaoEncontrado(LimiteMaximoDeEmprestimos ex, HttpServletRequest request) {
+        log.error("Api Error - ", ex);
+        return ResponseEntity
+                .status(HttpStatus.UNPROCESSABLE_ENTITY)
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(new MessageError(request, HttpStatus.UNPROCESSABLE_ENTITY, ex.getMessage()));
+    }
+    @ExceptionHandler(UsuarioComLivroEmprestado.class)
+    public ResponseEntity<MessageError> conteudoNaoEncontrado(UsuarioComLivroEmprestado ex, HttpServletRequest request) {
         log.error("Api Error - ", ex);
         return ResponseEntity
                 .status(HttpStatus.UNPROCESSABLE_ENTITY)

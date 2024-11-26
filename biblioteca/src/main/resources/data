@@ -1,0 +1,4 @@
+INSERT INTO livros (titulo, autor, genero, ano_publicacao, vezes_emprestado) VALUES
+                                                                                 ('O Senhor dos Anéis', 'J.R.R. Tolkien', 'Fantasia', 1954, 10),
+                                                                                 ('1984', 'George Orwell', 'Distopia', 1949, 5),
+                                                                                 ('Dom Casmurro', 'Machado de Assis', 'Clássico', 1899, 2);
