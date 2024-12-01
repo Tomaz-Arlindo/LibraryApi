@@ -26,8 +26,7 @@ _Git clone..._
 
 
 ## Contribuindo
-_Instruções de como contribuir_
-
+[Sabia como contribuir](https://github.com/Tomaz-Arlindo/LibraryApi/blob/master/CONTRIBUTING.md)
 
 ## Autores
 _Exibir autores_
