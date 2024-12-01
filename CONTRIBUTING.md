@@ -3,17 +3,55 @@
 Agradecemos seu interesse em contribuir com este projeto! Siga as orientações abaixo para garantir que sua contribuição seja bem recebida.
 
 ## Como Contribuir
+### 1. Reporte Problemas
+Se você encontrou um bug, tem uma sugestão ou ideia de melhoria:
+- Verifique se o problema já foi relatado na aba [Issues](https://github.com/Tomaz-Arlindo/LibraryApi/issues).
+- Caso seja um novo problema, abra uma nova issue e forneça o máximo de detalhes possível:
+  - O que você esperava que acontecesse?
+  - O que realmente aconteceu?
+  - Passos para reproduzir o problema.
 
-1. **Fork o repositório**: Crie uma cópia do projeto no seu GitHub clicando em "Fork".
-2. **Crie uma branch**: Crie uma nova branch para sua alteração com um nome descritivo.
+### 2. Sugira Melhorias
+- Use as issues para sugerir novas funcionalidades ou melhorias.
+- Explique claramente o benefício da mudança para o projeto.
+
+### 3. Contribua com Código
+Para corrigir bugs, implementar funcionalidades ou melhorar o código:
+
+#### a) Faça um Fork do Repositório
+1. Clique no botão "Fork" no canto superior direito da página do repositório.
+2. Clone seu fork localmente:
    ```bash
-   git checkout -b feature-nova-funcionalidade
-   ```
-3. **Faça suas alterações**: Edite os arquivos necessários e teste suas alterações.
-4. **Envie um Pull Request (PR)**: Após concluir as alterações, faça o commit e envie um PR explicando o que foi alterado.
+   git clone https://github.com/<SEU_USUARIO>/LibraryApi.git
+
+#### b) Crie uma Nova Branch
+1. Certifique-se de estar na branch principal:
    ```bash
-   git push origin feature-nova-funcionalidade
-   ```
+   git checkout main
+
+2. Crie uma nova branch para suas alterações:
+   ```bash
+   git checkout -b feature/nome-da-sua-feature
+
+#### c) Faça as Alterações
+Garanta que suas alterações seguem os padrões do projeto.
+Inclua testes para novas funcionalidades ou correções.
+Teste localmente para garantir que nada foi quebrado.
+
+#### d) Faça Commits Claros
+1. Adicione os arquivos alterados:
+   ```bash
+   git add .
+2. Faça um commit descritivo:
+   ```bash
+   git commit -m "Descrição breve da alteração"
+
+#### e) Envie Suas Alterações
+1. Envie sua branch para o repositório remoto:
+   ```bash
+     git push origin feature/nome-da-sua-feature
+   
+2. Abra um Pull Request (PR) a partir da sua branch.
 
 ## Regras para Contribuição
 
