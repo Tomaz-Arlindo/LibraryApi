@@ -29,7 +29,15 @@ _Git clone..._
 [Sabia como contribuir](https://github.com/Tomaz-Arlindo/LibraryApi/blob/master/CONTRIBUTING.md)
 
 ## Autores
-_Exibir autores_
+<table align="center">
+  <tr>
+    <td align="center"><a href="https://github.com/CimentoPE"><img src="https://avatars.githubusercontent.com/u/150206630?v=4" width="150px" alt="Rafael"/><br /><sub><b>Rafael</b></sub></a></td>
+    <td align="center"><a href="https://github.com/Tomaz-Arlindo"><img src="https://avatars.githubusercontent.com/u/109036088?v=4" width="150px" alt="Tomaz Arlindo"/><br /><sub><b>Tomaz Arlindo</b></sub></a></td>
+    <td align="center"><a href="https://github.com/raiiguilherme"><img src="https://avatars.githubusercontent.com/raiiguilherme?v=4" width="150px" alt="Rai Guilherme"/><br /><sub><b>Rai Guilherme</b></sub></a></td>
+    <td align="center"><a href="https://github.com/paulodbv"><img src="https://avatars.githubusercontent.com/u/142844427?v=4" width="150px" alt="Paulo Mateus"/><br /><sub><b>Paulo Mateus</b></sub></a></td>
+    <td align="center"><a href="https://github.com/LucasAires01"><img src="https://avatars.githubusercontent.com/u/142992717?v=4" width="150px" alt="Lucas Aires"/><br /><sub><b>Lucas Aires</b></sub></a></td>
+  </tr>
+</table>
 
 ---
 ## Licença
