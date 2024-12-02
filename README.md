@@ -1,5 +1,4 @@
 # LibraryApi
-  <p align="center"> ⚠ README INCOMPLETO ⚠ <p>
 
 ### Sumário:
   * [Descrição](#descrição)
@@ -10,7 +9,14 @@
   * [Licença](#licença)
 
 ## Descrição
-_Descrição geral_
+Este é um sistema de gerenciamento de biblioteca, projetado para facilitar o controle de livros, usuários e empréstimos. A aplicação foi construída com **Spring Boot**, utiliza **MySQL** como banco de dados e está totalmente conteinerizada com **Docker**, permitindo fácil implantação em qualquer ambiente que suporte containers.
+
+### Funcionalidades principais
+- Cadastro de livros, usuários e empréstimos.
+- Gerenciamento e histórico de devoluções.
+- Validação e tratamento de erros HTTP.
+- Conteinerização completa com suporte a ambientes multi-plataforma.
+
 
 
 ## Clonando repositório
@@ -39,7 +45,7 @@ _Descrição geral_
    No terminal, execute:
    ```bash
    git clone <URL-do-repositorio>
-
+   ```
 
 
 ## Pré-requisitos
@@ -47,7 +53,8 @@ _Descrição geral_
 2. Rodar a API utilizando o comando:
    ```bash
    java -jar (nomedoarquivo .jar)
-3. Utilizar um programa de requisições de sua preferência (Postman, Insomnia, etc)
+   ```
+3. Utilizar um programa de requisições de sua preferência ([Postman](https://www.postman.com), [Insomnia](https://insomnia.rest/download), etc)
 
 
 ## Contribuindo
@@ -81,7 +88,3 @@ Este projeto está licenciado sob a GNU GPL-3.0. Abaixo, um resumo dos principai
 **Garantias:** Não há garantias para o software.
 
 Para mais detalhes, consulte o texto completo da licença [aqui](https://github.com/Tomaz-Arlindo/LibraryApi/blob/master/LICENSE).
-
-
-  <p align="center"> ⚠ README INCOMPLETO ⚠ <p>
-  
