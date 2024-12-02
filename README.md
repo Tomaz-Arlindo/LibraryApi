@@ -66,7 +66,21 @@ _Descrição geral_
 
 ---
 ## Licença
-_Informações da Licença_
+**GNU General Public License v3.0**
+
+Este projeto está licenciado sob a GNU GPL-3.0. Abaixo, um resumo dos principais pontos:
+
+**Liberdade de uso:** Você pode usar o software para qualquer finalidade.
+
+**Distribuição:** É permitido distribuir cópias, desde que a licença seja mantida.
+
+**Modificações:** Alterações no código são permitidas, mas as versões modificadas devem ser licenciadas sob os mesmos termos.
+
+**Software Livre:** O código-fonte deve estar disponível em todas as distribuições do software.
+
+**Garantias:** Não há garantias para o software.
+
+Para mais detalhes, consulte o texto completo da licença [aqui](https://github.com/Tomaz-Arlindo/LibraryApi/blob/master/LICENSE).
 
 
   <p align="center"> ⚠ README INCOMPLETO ⚠ <p>
