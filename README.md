@@ -2,7 +2,7 @@
 
 ### Sumário:
   * [Descrição](#descrição)
-  * [Clonando repositório](#clonando-repositório)
+  * [Como baixar o repositório](#como-baixar-o-repositório)
   * [Pré-requisitos](#pré-requisitos)
   * [Contribuindo](#contribuindo)
   * [Autores](#autores)
@@ -18,44 +18,71 @@ Este é um sistema de gerenciamento de biblioteca, projetado para facilitar o co
 - Conteinerização completa com suporte a ambientes multi-plataforma.
 
 
-
-## Clonando repositório
-
-1. Certifique-se de que o Git está instalado na sua máquina.  
-   - Para verificar, execute o comando:
-     ```bash
-     git --version
-     ```
-   - Se o Git não estiver instalado, [faça o download aqui](https://git-scm.com/) e siga as instruções de instalação.
-
-2. Tenha o URL do repositório que você deseja clonar (ex.: HTTPS ou SSH).
-
-## Passos para Clonar o Repositório
-
-1. **Escolha um diretório na sua máquina local onde deseja clonar o repositório.**  
-   - Navegue até o diretório desejado com o comando:
-     ```bash
-     cd /caminho/do/diretorio
-     ```
-
-2. **Copie o URL do repositório.**  
-   - No GitHub, clique no botão "Code" ou "Clone" e copie o URL (HTTPS ou SSH).
-
-3. **Execute o comando de clonagem.**  
-   No terminal, execute:
+## **Como baixar o repositório**  
+1. Clone este repositório:  
    ```bash
-   git clone <URL-do-repositorio>
-   ```
-
-
-## Pré-requisitos
-1. Ter o JDK 21 instalado
-2. Rodar a API utilizando o comando:
+   git clone https://github.com/Tomaz-Arlindo/LibraryApi.git
+   ``` 
+2. Navegue até o diretório onde se encontra o *docker-compose.yml*
    ```bash
-   java -jar (nomedoarquivo .jar)
-   ```
-3. Utilizar um programa de requisições de sua preferência ([Postman](https://www.postman.com), [Insomnia](https://insomnia.rest/download), etc)
+   cd LibraryApi/libraryapi
+   ``` 
+   
 
+## **Pré-requisitos**  
+
+Você precisará instalar os seguintes programas para rodar o projeto:  
+- **Docker** e **Docker Compose**  
+- **Java 21+**  
+
+### **Instalação no Linux (Fedora)**
+<details>
+ 
+1. Instale o Docker e o Compose:  
+   ```bash
+   sudo dnf install -y docker-ce docker-compose-plugin
+   ```  
+
+2. Inicie o Docker:  
+   ```bash
+   sudo systemctl start docker
+   ```  
+
+3. Verifique a versão do Java:  
+   ```bash
+   java --version
+   ```  
+   (Se necessário, instale o Java com `sudo dnf install java-21-openjdk`)
+
+</details>
+
+### **Instalação no Windows**
+<details>
+ 
+1. Baixe e instale o **Docker Desktop** :  
+   - Acesse [Docker Desktop](https://www.docker.com/products/docker-desktop/) e faça o download.  
+
+2. Certifique-se de ativar a opção para usar o WSL2 durante a instalação.  
+
+3. Instale o **Java 21**:  
+   - Baixe o instalador do OpenJDK 21 no site oficial: [OpenJDK Downloads](https://jdk.java.net/21/)
+   - Após a instalação, verifique a versão no terminal ou PowerShell:  
+     ```bash
+     java --version
+     ```
+</details>
+
+## **Como rodar o projeto**  
+
+1. No diretório "libraryapi" do projeto, configure os containers com:  
+   ```bash
+   docker compose up --build -d
+   ``` 
+
+2. A aplicação estará disponível em:
+   `http://localhost:8080`
+   
+3. Utilize um programa de requisições de sua preferência ([Postman](https://www.postman.com), [Insomnia](https://insomnia.rest/download), etc)
 
 ## Contribuindo
 [Sabia como contribuir](https://github.com/Tomaz-Arlindo/LibraryApi/blob/master/CONTRIBUTING.md)
